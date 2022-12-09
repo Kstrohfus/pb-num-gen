@@ -1,3 +1,4 @@
+
 let one = document.querySelector(".one")
 let pb = document.querySelector(".pb")
 const btn = document.querySelector(".btn")
@@ -17,3 +18,4 @@ randomNum()
 randomNumPb()
 })
 
+//let numElements = [".one", ".two", ".three", ".four", ".five", ".pb"]//
