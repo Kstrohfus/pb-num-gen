@@ -1,80 +1,88 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Rubik+Vinyl&display=swap");
 
-container {
-    font-family: "Nunito", sans-serif;
+.container {
+    height: 100%;
     display: grid;
-    grid-column: (12, 1fr);
-    grid-row: 40px, auto, 40px;
-    height: 100vh;
-    overflow: hidden;
+    margin-top: 100px;
+    grid-template-columns: (12, 1fr);
+    grid-template-rows: 200px, 200px, 200px;
+    grid-template-areas:
+        "h h h h h h h h h h h h"
+        ". . . on tw th fo fi si  . . . "
+        ". . . . . . b  . . . . ."
+        ". f f f f f f f f . . .  ";
 }
 
 h1 {
+    font-family: "Rubik Vinyl", cursive;
     font-size: 24px;
+    grid-area: h;
+    background-color: rgba(180, 177, 177, 0.24);
+    margin-top: 0;
+    text-align: center;
+    height: 100%;
+    color: blue;
+    text-transform: uppercase;
+}
+
+.btn {
+    background-color: rgba(37, 34, 228, 0.895);
+    font-family: "Inconsolata", monospace;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    box-shadow: 5px 6px 10px #000;
+    grid-area: b;
+    border-radius: 7px;
+    justify-self: center;
+}
+
+.btn:hover {
+    background-color: rgba(49, 49, 49, 0.279);
+}
+
+.one,
+.two,
+.three,
+.four,
+.five {
+    font-size: 36px;
+    color: black;
+    font-family: "Rubik Vinyl", cursive;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 50%;
+    box-shadow: 5px 6px 10px #000;
+    background-color: rgb(255, 255, 255);
 }
 
 .one {
-    color: black;
-    text-align: center;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    padding: 10px;
-    margin: 15px;
-    box-shadow: 5px 6px 10px #000;
+    grid-area: on;
 }
 
 .two {
-    color: black;
-    text-align: center;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    padding: 10px;
-    margin: 15px;
-    box-shadow: 5px 6px 10px #000;
+    grid-area: tw;
 }
 
 .three {
-    color: black;
-    text-align: center;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    padding: 10px;
-    margin: 15px;
-    box-shadow: 5px 6px 10px #000;
+    grid-area: th;
 }
 
 .four {
-    color: black;
-    text-align: center;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    padding: 10px;
-    margin: 15px;
-    box-shadow: 5px 6px 10px #000;
+    grid-area: fo;
 }
 
 .five {
-    color: black;
-    text-align: center;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    padding: 10px;
-    margin: 15px;
-    box-shadow: 5px 6px 10px #000;
+    grid-area: fi;
 }
 
 .pb {
     color: white;
+    font-size: 36px;
+    font-family: "Rubik Vinyl", cursive;
     text-align: center;
     background-color: rgb(220, 10, 10);
     border-radius: 50%;
@@ -83,15 +91,15 @@ h1 {
     padding: 10px;
     margin: 15px;
     box-shadow: 5px 6px 10px #000;
+    grid-area: si;
 }
 
-.small {
-    text-align: center;
+.please {
     color: rgb(80, 80, 80);
     font-size: 12px;
-}
-
-.p {
+    padding-top: 20px;
     text-align: center;
-    width: 50%;
+    justify-self: center;
+    grid-area: f;
+    font-family: "Inconsolata", monospace;
 }
