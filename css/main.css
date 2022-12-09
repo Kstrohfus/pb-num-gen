@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+h1 {
+    font-size: 24px;
+}
+.container {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+    margin: 20px;
+}
+
+.one {
+    color: black;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin: 15px;
+    box-shadow: 5px 6px 10px #000;
+}
+
+.two {
+    color: black;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin: 15px;
+    box-shadow: 5px 6px 10px #000;
+}
+
+.three {
+    color: black;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin: 15px;
+    box-shadow: 5px 6px 10px #000;
+}
+
+.four {
+    color: black;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin: 15px;
+    box-shadow: 5px 6px 10px #000;
+}
+
+.five {
+    color: black;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin: 15px;
+    box-shadow: 5px 6px 10px #000;
+}
+
+.pb {
+    color: white;
+    text-align: center;
+    background-color: rgb(220, 10, 10);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin: 15px;
+    box-shadow: 5px 6px 10px #000;
+}
+
+.small {
+    text-align: center;
+    color: rgb(80, 80, 80);
+    font-size: 12px;
+}
+
+.p {
+    text-align: center;
+    width: 50%;
+}
