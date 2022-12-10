@@ -3,21 +3,17 @@
 
 .container {
     height: 100%;
+    width: auto;
     display: grid;
-    margin-top: 100px;
-    grid-template-columns: (12, 1fr);
-    grid-template-rows: 100px 150px 50px 18px;
-    grid-template-areas:
-        "h h h h h h h h h h h h "
-        ".  . . on tw th fo fi si .  .  . "
-        ". . . . . b b  . . . . ."
-        "f f f f f f f f f f f f  ";
+    grid-gap: 5px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    align-content: center;
 }
 
 h1 {
     font-family: "Rubik Vinyl", cursive;
-    font-size: 24px;
-    grid-area: h;
+    font-size: 42px;
     text-align: center;
     height: 100%;
     color: blue;
@@ -25,18 +21,32 @@ h1 {
 }
 
 .btn {
-    background-color: rgba(37, 34, 228, 0.895);
-    font-size: 16px;
-    font-family: "Inconsolata", monospace;
+    grid-row: 2 / span 1;
+    grid-column: 5 / span 1;
+    background-color: rgba(51, 49, 192, 0.895);
+    font-size: 24px;
+    font-family: "Rubik Vinyl", cursive;
     color: red;
     padding: 10px;
     box-shadow: 5px 6px 10px #000;
-    grid-area: b;
     border-radius: 7px;
 }
 
-.btn:hover {
+.btn1 {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+    background-color: rgba(51, 49, 192, 0.895);
+    font-size: 24px;
+    font-family: "Rubik Vinyl", cursive;
+    color: red;
+    padding: 10px;
+    box-shadow: 5px 6px 10px #000;
+    border-radius: 7px;
+}
+.btn:hover,
+.btn1:hover {
     background-color: rgba(49, 49, 49, 0.279);
+    transition: 500ms;
 }
 
 .one,
@@ -56,27 +66,6 @@ h1 {
     background-color: rgb(255, 255, 255);
 }
 
-.one {
-    grid-area: on;
-    margin-left: 20px;
-}
-
-.two {
-    grid-area: tw;
-}
-
-.three {
-    grid-area: th;
-}
-
-.four {
-    grid-area: fo;
-}
-
-.five {
-    grid-area: fi;
-}
-
 .pb {
     color: white;
     font-size: 36px;
@@ -87,16 +76,12 @@ h1 {
     width: 50px;
     height: 50px;
     padding: 10px;
-
     box-shadow: 5px 6px 10px #000;
-    grid-area: si;
 }
 
 .please {
+    font-family: "Inconsolata", monospace;
     color: rgb(80, 80, 80);
     font-size: 12px;
-    padding-top: 20px;
     text-align: center;
-    grid-area: f;
-    font-family: "Inconsolata", monospace;
 }
