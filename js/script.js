@@ -8,8 +8,7 @@ for (let i = 0; i < elements.length; i++) {
 function randomNum() {
 const num = Math.floor(Math.random() * 69) + 1;
 elements[i].innerText = num
-}
-randomNum()
+}randomNum()
 }) 
 }
 
