@@ -45,7 +45,7 @@ h1 {
     border-radius: 7px;
 }
 .btn:hover,
-.btn1:hover {
+.btnOne:hover {
     background-color: rgba(49, 49, 49, 0.279);
     transition: 500ms;
     cursor: pointer;
@@ -97,7 +97,7 @@ h1 {
     }
 
     .btn,
-    .btn1 {
+    .btnOne {
         display: flex;
         flex-flow: column;
         align-items: center;
