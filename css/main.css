@@ -48,6 +48,7 @@ h1 {
 .btn1:hover {
     background-color: rgba(49, 49, 49, 0.279);
     transition: 500ms;
+    cursor: pointer;
 }
 
 .one,
