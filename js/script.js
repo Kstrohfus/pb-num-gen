@@ -1,6 +1,6 @@
 const pb = document.querySelector(".pb");
 const btn = document.querySelector(".btn");
-const btnOne = document.querySelector(".btn1");
+const btnOne = document.querySelector(".btnOne");
 
 
 let elements = document.querySelectorAll(".num");
