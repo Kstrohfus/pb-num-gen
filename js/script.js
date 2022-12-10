@@ -1,28 +1,27 @@
-
-const one = document.querySelector(".one");
 const pb = document.querySelector(".pb");
 const btn = document.querySelector(".btn");
 
-    
 
+let elements = document.querySelectorAll(".num");
+for (let i = 0; i < elements.length; i++) {
+  elements[i].addEventListener("click", function() {
 function randomNum() {
-const num =Math.floor(Math.random() * 26) + 1;
-one.innerText = num
+const num = Math.floor(Math.random() * 69) + 1;
+elements[i].innerText = num
+}
+randomNum()
+}) 
 }
 
 function randomNumPb() {
-const numpb =Math.floor(Math.random() * 26) + 1;
+const numpb = Math.floor(Math.random() * 26) + 1;
 pb.innerText = numpb
 }
 
 btn.addEventListener("click", function (){
-randomNum()
+
 randomNumPb()
 })
 
 
-// Different ways...Need to figure out to lump elements into function...
 
-// let numElements = document.querySelectorAll([".one", ".two", ".three", ".four", ".five", ".pb"])
-
-// let numElements = [...document.getElementsByClassName("num")];

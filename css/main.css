@@ -6,12 +6,12 @@
     display: grid;
     margin-top: 100px;
     grid-template-columns: (12, 1fr);
-    grid-template-rows: 200px, 200px, 200px;
+    grid-template-rows: 100px 150px 50px 18px;
     grid-template-areas:
-        "h h h h h h h h h h h h"
-        ". . . on tw th fo fi si  . . . "
+        "h h h h h h h h h h h h "
+        ".  . . on tw th  fo fi si . .  . "
         ". . . . . b b  . . . . ."
-        ". f f f f f f f f . . .  ";
+        "f f f f f f f f f f f f  ";
 }
 
 h1 {
@@ -28,13 +28,13 @@ h1 {
 
 .btn {
     background-color: rgba(37, 34, 228, 0.895);
+    font-size: 16px;
     font-family: "Inconsolata", monospace;
-    color: rgb(255, 255, 255);
+    color: red;
     padding: 10px;
     box-shadow: 5px 6px 10px #000;
     grid-area: b;
     border-radius: 7px;
-    justify-self: center;
 }
 
 .btn:hover {
@@ -53,8 +53,6 @@ h1 {
     width: 50px;
     height: 50px;
     padding: 10px;
-    margin: 15px;
-    margin-right: 5px;
     border-radius: 50%;
     box-shadow: 5px 6px 10px #000;
     background-color: rgb(255, 255, 255);
@@ -62,6 +60,7 @@ h1 {
 
 .one {
     grid-area: on;
+    margin-left: 20px;
 }
 
 .two {
@@ -90,7 +89,7 @@ h1 {
     width: 50px;
     height: 50px;
     padding: 10px;
-    margin: 15px;
+
     box-shadow: 5px 6px 10px #000;
     grid-area: si;
 }
@@ -100,7 +99,6 @@ h1 {
     font-size: 12px;
     padding-top: 20px;
     text-align: center;
-    justify-self: center;
     grid-area: f;
     font-family: "Inconsolata", monospace;
 }
