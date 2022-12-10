@@ -86,3 +86,23 @@ h1 {
     font-size: 12px;
     text-align: center;
 }
+
+/* MEDIA */
+@media (max-width: 480px) {
+    .container {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .btn,
+    .btn1 {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 300px;
+        height: 100px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
